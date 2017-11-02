@@ -9,6 +9,28 @@
   </head>
 
   <body>
-    <%= yield %>
+  <header>
+    <div class="container">
+      <h1>おみくじサイトへようこそ</h1>
+      <div class="link-box">
+        <a class="header-link" href="/home/top">おみくじトップ</a>
+        <a class="header-link" href="/user/mypage">マイページ</a>
+        <a class="header-link" href="/user/logs">過去ログ</a>
+      </div>
+    </div>
+  </header>
+    <div class="yield">
+      <%= yield %>
+    </div>
+    <footer>
+      <div class="container">
+        <h2>おみくじサイト</h2>
+        <div class="link-box">
+          <a class="header-link" href="/home/top">おみくじトップ</a>
+          <a class="header-link" href="/user/mypage">マイページ</a>
+          <a class="header-link" href="/user/logs">過去ログ</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
